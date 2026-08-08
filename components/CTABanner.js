@@ -1,8 +1,14 @@
+"use client";
+
 import { Headphones } from "lucide-react";
 import Button from "@/components/ui/Button";
 import { footer } from "@/data/siteData";
 
 export default function CTABanner() {
+  const openLeadForm = () => {
+    window.dispatchEvent(new Event("open-lead-form"));
+  };
+
   return (
     <section className="px-5 sm:px-8">
       <div className="max-w-7xl mx-auto bg-blue-600 rounded-3xl px-8 py-10 flex flex-col sm:flex-row items-center justify-between gap-6">
@@ -15,7 +21,7 @@ export default function CTABanner() {
             <p className="text-blue-100 mt-1">{footer.ctaSubtitle}</p>
           </div>
         </div>
-        <Button href="#lead-form" variant="outline" className="shrink-0">
+        <Button onClick={openLeadForm} variant="outline" className="shrink-0">
           {footer.ctaButton}
         </Button>
       </div>

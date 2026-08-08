@@ -27,7 +27,6 @@ export default function Home() {
         {/* <HowItWorks /> */}
         <FAQs />
         <Testimonials />
-        {/* <LeadForm /> */}
         <CTABanner />
       </main>
       <Footer />

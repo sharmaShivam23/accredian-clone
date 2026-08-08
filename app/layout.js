@@ -1,4 +1,5 @@
 import "./globals.css";
+import LeadForm from "@/components/LeadForm";
 
 export const metadata = {
   title: "Accredian Enterprise | Next-Gen Expertise For Your Enterprise",
@@ -11,6 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="min-h-screen flex flex-col antialiased text-slate-800">
         {children}
+        <LeadForm/>
       </body>
     </html>
   );
